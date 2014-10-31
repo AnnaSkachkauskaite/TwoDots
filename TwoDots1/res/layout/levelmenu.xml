@@ -9,51 +9,39 @@
         android:layout_height="wrap_content" >
 
         <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="125dp" />
-
-        <TextView
             android:id="@+id/levelText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Levels"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-    </TableRow>
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:gravity="center_horizontal"/>
 
-    <TableRow
-        android:id="@+id/TableRow01"
+    </TableRow>
+<TableRow
+        android:id="@+id/tableRow4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
-        <Button
-            android:id="@+id/Button06"
+        <TextView
+            android:id="@+id/levelText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1" />
+            android:layout_weight="1"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:gravity="center_horizontal"/>
 
         <Button
-            android:id="@+id/Button07"
+            android:id="@+id/buttonBackToMainMenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2" />
+            android:onClick="onClickBackToMenu"
+            android:text="Back" />
 
-        <Button
-            android:id="@+id/Button05"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3" />
-
-        <Button
-            android:id="@+id/Button04"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4" />
     </TableRow>
-
     <TableRow
-        android:id="@+id/tableRow2"
+        android:id="@+id/TableRow2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
@@ -61,25 +49,73 @@
             android:id="@+id/Button01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5" />
+            android:text="1" 
+            android:layout_weight="1"
+            android:onClick="onClickStartLevel"
+            />
 
         <Button
             android:id="@+id/Button02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="6" />
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="2" />
 
         <Button
             android:id="@+id/Button03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="7" />
+            android:text="3" 
+            android:layout_weight="1"
+            android:enabled="false"/>
 
         <Button
-            android:id="@+id/button04"
+            android:id="@+id/Button04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="4" 
+            android:layout_weight="1"
+            android:enabled="false"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/Button05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5" 
+            android:layout_weight="1"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/Button06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6" 
+            android:layout_weight="1"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/Button07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7" 
+            android:layout_weight="1"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/button08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
             android:text="8" />
+
     </TableRow>
 
 </TableLayout>
