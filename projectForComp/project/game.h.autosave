@@ -22,7 +22,6 @@ private:
     int size;
     int matrix[maxSize][maxSize];
     QList<QList<QPair<int, int>>> matches;
-    //QList<int*> matches; //хранит массивы из кнопок на удаление
 };
 
 #endif // GAME_H
